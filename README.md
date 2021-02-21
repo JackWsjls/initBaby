@@ -1,13 +1,13 @@
 # initBaby
 learn react
 
-# 报错问题
-## ReferenceError: HtmlWebpackPlugin is not defined
-原因：1、没有引入这行代码 const HtmlWebpackPlugin = require('html-webpack-plugin')
-## TypeError: webpackMerge is not a function
+## 报错问题
+### ReferenceError: HtmlWebpackPlugin is not defined
+没有引入这行代码 const HtmlWebpackPlugin = require('html-webpack-plugin')
+### TypeError: webpackMerge is not a function
 const webpackMerge = require("webpack-merge");
 webpackMerge.merge();
-## Error: Cannot find module ‘webpack-cli/bin/config-yargs’
+### Error: Cannot find module ‘webpack-cli/bin/config-yargs’
 webpack、webpack-cli、webpack-dev-server是需要版本匹配
 不匹配：
   ```
@@ -29,6 +29,5 @@ webpack、webpack-cli、webpack-dev-server是需要版本匹配
   "webpack-dev-server": "^3.11.0",
   "html-webpack-plugin": "4.0.0-alpha"
   ```
-
 备注：
 https://mp.weixin.qq.com/s/q_MaupD49WuBvvO3oLXf1A 感谢
